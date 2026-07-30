@@ -1,8 +1,28 @@
 aid: marble-health
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/marble-health.png
 name: Marble Health
-description: 'Marble Health is a company surfaced as a portfolio company of costanoa-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: healthtech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Marble Health is a virtual mental-health company providing personalized
+  therapy for K-12 students, delivered through partnerships with schools and school
+  districts and directly to families. Licensed therapists meet with students over
+  video, typically within a few days and with no waitlists, and the service accepts
+  most insurance plans including Medicaid. The platform at app.marblehealth.com handles
+  referrals and intake for school counselors and parents, and Marble Health also runs
+  parent workshops and professional-development training for educators. The company
+  is backed by Costanoa Ventures. As of this enrichment pass Marble Health exposes
+  no public API, developer portal, or machine-readable discovery surface (no
+  .well-known documents and no llms.txt); it is a consumer/patient-facing healthtech
+  service rather than an API provider.'
 url: https://raw.githubusercontent.com/api-evangelist/marble-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Healthtech
+- Mental Health
+- Telehealth
+- Therapy
+- Education
+- Students
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/marble-health-domain-security.yml
 - type: Website
   url: https://marblehealth.com
+- type: SignUp
+  url: https://app.marblehealth.com/refer
+- type: Login
+  url: https://app.marblehealth.com/
+- type: PrivacyPolicy
+  url: https://app.marblehealth.com/info-pdfs/Notice_of_Privacy_Practices.pdf
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
